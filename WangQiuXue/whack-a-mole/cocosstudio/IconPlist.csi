@@ -1,0 +1,60 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="IconPlist" Type="Plist" ID="cea9f5cd-c481-4e2b-927c-59b79379b53b" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="icon/0.png" />
+      <FilePathData Path="icon/1.png" />
+      <FilePathData Path="icon/10.png" />
+      <FilePathData Path="icon/11.png" />
+      <FilePathData Path="icon/12.png" />
+      <FilePathData Path="icon/13.png" />
+      <FilePathData Path="icon/14.png" />
+      <FilePathData Path="icon/15.png" />
+      <FilePathData Path="icon/16.png" />
+      <FilePathData Path="icon/17.png" />
+      <FilePathData Path="icon/18.png" />
+      <FilePathData Path="icon/19.png" />
+      <FilePathData Path="icon/2.png" />
+      <FilePathData Path="icon/20.png" />
+      <FilePathData Path="icon/21.png" />
+      <FilePathData Path="icon/22.png" />
+      <FilePathData Path="icon/23.png" />
+      <FilePathData Path="icon/24.png" />
+      <FilePathData Path="icon/25.png" />
+      <FilePathData Path="icon/26.png" />
+      <FilePathData Path="icon/27.png" />
+      <FilePathData Path="icon/28.png" />
+      <FilePathData Path="icon/29.png" />
+      <FilePathData Path="icon/3.png" />
+      <FilePathData Path="icon/30.png" />
+      <FilePathData Path="icon/31.png" />
+      <FilePathData Path="icon/32.png" />
+      <FilePathData Path="icon/33.png" />
+      <FilePathData Path="icon/34.png" />
+      <FilePathData Path="icon/35.png" />
+      <FilePathData Path="icon/36.png" />
+      <FilePathData Path="icon/37.png" />
+      <FilePathData Path="icon/38.png" />
+      <FilePathData Path="icon/39.png" />
+      <FilePathData Path="icon/4.png" />
+      <FilePathData Path="icon/40.png" />
+      <FilePathData Path="icon/41.png" />
+      <FilePathData Path="icon/42.png" />
+      <FilePathData Path="icon/43.png" />
+      <FilePathData Path="icon/44.png" />
+      <FilePathData Path="icon/45_1_1.png" />
+      <FilePathData Path="icon/45_1_2.png" />
+      <FilePathData Path="icon/46.png" />
+      <FilePathData Path="icon/47.png" />
+      <FilePathData Path="icon/48.png" />
+      <FilePathData Path="icon/49.png" />
+      <FilePathData Path="icon/5.png" />
+      <FilePathData Path="icon/6.png" />
+      <FilePathData Path="icon/7.png" />
+      <FilePathData Path="icon/8.png" />
+      <FilePathData Path="icon/9.png" />
+      <FilePathData Path="icon/title.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
