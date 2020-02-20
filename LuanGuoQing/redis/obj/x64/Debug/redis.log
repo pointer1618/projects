@@ -1,0 +1,670 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.0.250”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  dict.cpp
+  intset.cpp
+F:\redis\intset.h(18,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(18,21): warning :    for (int i = 0; i < length; i++)
+F:\redis\intset.h(18,21): warning :                      ^
+F:\redis\intset.h(40,21): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+F:\redis\intset.h(40,21): warning :      if(begin == mid);
+F:\redis\intset.h(40,21): warning :                      ^
+F:\redis\intset.h(55,12): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(55,12): warning :    for (; i < length; i++)
+F:\redis\intset.h(55,12): warning :             ^
+F:\redis\intset.h(65,12): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(65,12): warning :    for (; i <= length; i++)
+F:\redis\intset.h(65,12): warning :             ^
+F:\redis\intset.h(85,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(85,21): warning :    for (int i = 0; i < length-1; i++)
+F:\redis\intset.h(85,21): warning :                      ^
+  list.cpp
+  main.cpp
+F:\redis\ziplist.h(70,77): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(70,77): warning :    unsigned int bytes = ZIPLIST_BYTES(zl) + ZIP_NODE_HEADER_SIZE + sizeof(int);
+F:\redis\ziplist.h(70,77): warning :                                                                              ^
+F:\redis\ziplist.h(72,27): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(72,27): warning :    unsigned int offset = p-zl;
+F:\redis\ziplist.h(72,27): warning :                            ^
+F:\redis\ziplist.h(90,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(90,23): warning :      for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(90,23): warning :                        ^
+F:\redis\ziplist.h(95,31): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(95,31): warning :      ZIP_NODE_PREVRAWLEN(node) = ZIP_NODE_BYTES(ZIPLIST_ENTRY_TAIL(zl));
+F:\redis\ziplist.h(95,31): warning :                                ^
+F:\redis\ziplist.h(100,26): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(100,26): warning :      ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(100,26): warning :                           ^
+F:\redis\ziplist.h(109,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(109,22): warning :     for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(109,22): warning :                       ^
+F:\redis\ziplist.h(119,27): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(119,27): warning :     ZIP_NODE_PREVRAWLEN(p) = ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(119,27): warning :                            ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(120,26): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(120,26): message :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes;i++)
+F:\redis\ziplist.h(120,26): message :                           ^
+F:\redis\ziplist.h(120,50): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(120,50): warning :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes;i++)
+F:\redis\ziplist.h(120,50): warning :                                                   ^
+F:\redis\ziplist.h(124,25): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(124,25): warning :     ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(124,25): warning :                          ^
+F:\redis\ziplist.h(125,31): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(125,31): warning :     ZIPLIST_TAIL_OFFSET(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(125,31): warning :                                ^
+F:\redis\ziplist.h(139,38): warning : conversion to ‘unsigned int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(139,38): warning :    unsigned int strLength = strlen(str);
+F:\redis\ziplist.h(139,38): warning :                                       ^
+F:\redis\ziplist.h(140,67): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(140,67): warning :    unsigned int bytes = ZIPLIST_BYTES(zl) + ZIP_NODE_HEADER_SIZE + strLength;
+F:\redis\ziplist.h(140,67): warning :                                                                    ^
+F:\redis\ziplist.h(142,29): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(142,29): warning :    unsigned int offset = p - zl;
+F:\redis\ziplist.h(142,29): warning :                              ^
+F:\redis\ziplist.h(150,24): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(150,24): warning :      ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(150,24): warning :                         ^
+F:\redis\ziplist.h(151,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(151,23): warning :      for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(151,23): warning :                        ^
+F:\redis\ziplist.h(163,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(163,23): warning :      for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(163,23): warning :                        ^
+F:\redis\ziplist.h(168,31): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(168,31): warning :      ZIP_NODE_PREVRAWLEN(node) = ZIP_NODE_BYTES(ZIPLIST_ENTRY_TAIL(zl));
+F:\redis\ziplist.h(168,31): warning :                                ^
+F:\redis\ziplist.h(170,24): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(170,24): warning :      ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(170,24): warning :                         ^
+F:\redis\ziplist.h(171,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(171,23): warning :      for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(171,23): warning :                        ^
+F:\redis\ziplist.h(175,26): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(175,26): warning :      ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(175,26): warning :                           ^
+F:\redis\ziplist.h(184,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(184,22): warning :     for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(184,22): warning :                       ^
+F:\redis\ziplist.h(191,23): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(191,23): warning :     ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(191,23): warning :                        ^
+F:\redis\ziplist.h(192,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(192,22): warning :     for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(192,22): warning :                       ^
+F:\redis\ziplist.h(196,27): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(196,27): warning :     ZIP_NODE_PREVRAWLEN(p) = ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(196,27): warning :                            ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(197,26): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(197,26): message :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes; i++)
+F:\redis\ziplist.h(197,26): message :                           ^
+F:\redis\ziplist.h(197,50): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(197,50): warning :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes; i++)
+F:\redis\ziplist.h(197,50): warning :                                                   ^
+F:\redis\ziplist.h(201,25): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(201,25): warning :     ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(201,25): warning :                          ^
+F:\redis\ziplist.h(202,31): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(202,31): warning :     ZIPLIST_TAIL_OFFSET(newzl) += ZIP_NODE_BYTES(p);
+F:\redis\ziplist.h(202,31): warning :                                ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(357,24): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(357,24): message :    unsigned int psize = ZIP_NODE_BYTES(p);
+F:\redis\ziplist.h(357,24): message :                         ^
+F:\redis\ziplist.h(360,29): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(360,29): warning :    unsigned int offset = p - zl;
+F:\redis\ziplist.h(360,29): warning :                              ^
+F:\redis\ziplist.h(368,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(368,21): warning :    for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(368,21): warning :                      ^
+F:\redis\ziplist.h(372,34): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(372,34): warning :    for (int i = offset + psize; i < ZIPLIST_BYTES(zl); i++)
+F:\redis\ziplist.h(372,34): warning :                                   ^
+F:\redis\intset.h(18,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(18,21): warning :    for (int i = 0; i < length; i++)
+F:\redis\intset.h(18,21): warning :                      ^
+F:\redis\intset.h(40,21): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+F:\redis\intset.h(40,21): warning :      if(begin == mid);
+F:\redis\intset.h(40,21): warning :                      ^
+F:\redis\intset.h(55,12): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(55,12): warning :    for (; i < length; i++)
+F:\redis\intset.h(55,12): warning :             ^
+F:\redis\intset.h(65,12): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(65,12): warning :    for (; i <= length; i++)
+F:\redis\intset.h(65,12): warning :             ^
+F:\redis\intset.h(85,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(85,21): warning :    for (int i = 0; i < length-1; i++)
+F:\redis\intset.h(85,21): warning :                      ^
+F:\redis\skiplist.h(477,13): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\zset.h(14,2): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\redis\zset.h(14,2): warning :   }
+F:\redis\zset.h(14,2): warning :   ^
+F:\redis\zset.h(34,2): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\redis\zset.h(34,2): warning :   }
+F:\redis\zset.h(34,2): warning :   ^
+F:\redis\redis.h(211,14): warning : value computed is not used [-Wunused-value]
+F:\redis\redis.h(211,14): warning :    *refcount++;
+F:\redis\redis.h(211,14): warning :               ^
+F:\redis\redis.h(217,14): warning : value computed is not used [-Wunused-value]
+F:\redis\redis.h(217,14): warning :    *refcount--;
+F:\redis\redis.h(217,14): warning :               ^
+F:\redis\redis.h(251,12): warning : deleting ‘void*’ is undefined [-Wdelete-incomplete]
+F:\redis\redis.h(251,12): warning :      delete ptr;
+F:\redis\redis.h(251,12): warning :             ^
+F:\redis\redis.h(260,14): warning : value computed is not used [-Wunused-value]
+F:\redis\redis.h(260,14): warning :    *refcount++;
+F:\redis\redis.h(260,14): warning :               ^
+F:\redis\redis.h(266,14): warning : value computed is not used [-Wunused-value]
+F:\redis\redis.h(266,14): warning :    *refcount--;
+F:\redis\redis.h(266,14): warning :               ^
+F:\redis\redis.h(300,12): warning : deleting ‘void*’ is undefined [-Wdelete-incomplete]
+F:\redis\redis.h(300,12): warning :      delete ptr;
+F:\redis\redis.h(300,12): warning :             ^
+F:\redis\redis.h(333,2): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\redis\redis.h(333,2): warning :   }
+F:\redis\redis.h(333,2): warning :   ^
+F:\redis\redis.h(337,31): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\redis.h(337,31): warning :     return dictionaries->ht[0].used;
+F:\redis\redis.h(337,31): warning :                                ^
+F:\redis\redis.h(339,58): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\redis.h(339,58): warning :     return dictionaries->ht[0].used + dictionaries->ht[1].used;
+F:\redis\redis.h(339,58): warning :                                                           ^
+F:\redis\dict.h(233,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(233,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(233,13): warning :              ^
+F:\redis\dict.h(250,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(250,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(250,14): warning :               ^
+F:\redis\dict.h(417,3): warning : deleting array ‘((dict<double>*)this)->dict<double>::ht’
+F:\redis\dict.h(417,3): warning :    delete[]ht;
+F:\redis\dict.h(417,3): warning :    ^
+F:\redis\dict.h(273,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(273,47): warning :    unsigned int hashValue = dictGenHashFunction(k.sdsbuf(), k.sdslen());
+F:\redis\dict.h(273,47): warning :                                                ^
+F:\redis\dict.h(274,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(274,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(274,13): warning :              ^
+F:\redis\dict.h(282,5): warning : suggest parentheses around assignment used as truth value [-Wparentheses]
+F:\redis\dict.h(282,5): warning :      if (p = ht[0].table[hashValue])
+F:\redis\dict.h(282,5): warning :      ^
+F:\redis\dict.h(317,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(317,48): warning :     unsigned int hashValue = dictGenHashFunction(k.sdsbuf(), k.sdslen());
+F:\redis\dict.h(317,48): warning :                                                 ^
+F:\redis\dict.h(318,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(318,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(318,14): warning :               ^
+F:\redis\dict.h(325,6): warning : suggest parentheses around assignment used as truth value [-Wparentheses]
+F:\redis\dict.h(325,6): warning :       if (p = ht[1].table[hashValue])
+F:\redis\dict.h(325,6): warning :       ^
+F:\redis\dict.h(417,3): warning : deleting array ‘((dict<redisObject>*)this)->dict<redisObject>::ht’
+F:\redis\dict.h(417,3): warning :    delete[]ht;
+F:\redis\dict.h(417,3): warning :    ^
+F:\redis\dict.h(215,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(215,47): warning :    unsigned int hashValue = dictGenHashFunction(k.sdsbuf(), k.sdslen());
+F:\redis\dict.h(215,47): warning :                                                ^
+F:\redis\dict.h(216,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(216,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(216,13): warning :              ^
+F:\redis\dict.h(417,3): warning : deleting array ‘((dict<long long int>*)this)->dict<long long int>::ht’
+F:\redis\dict.h(417,3): warning :    delete[]ht;
+F:\redis\dict.h(417,3): warning :    ^
+F:\redis\dict.h(92,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(92,47): warning :    unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(92,47): warning :                                                ^
+F:\redis\dict.h(93,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(93,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(93,13): warning :              ^
+F:\redis\dict.h(123,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(123,48): warning :     unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(123,48): warning :                                                 ^
+F:\redis\dict.h(124,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(124,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(124,14): warning :               ^
+F:\redis\dict.h(356,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(356,48): warning :     unsigned int hashValue = dictGenHashFunction(ht[0].table[trehashhidx]->key->sdsbuf(), ht[0].table[trehashhidx]->key->sdslen());
+F:\redis\dict.h(356,48): warning :                                                 ^
+F:\redis\dict.h(357,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(357,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(357,14): warning :               ^
+F:\redis\dict.h(55,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\dict.h(55,21): warning :    for (int i = 0; i < size; i++)
+F:\redis\dict.h(55,21): warning :                      ^
+F:\redis\dict.h(55,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\dict.h(55,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\dict.h(92,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(92,47): warning :    unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(92,47): warning :                                                ^
+F:\redis\dict.h(93,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(93,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(93,13): warning :              ^
+F:\redis\dict.h(123,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(123,48): warning :     unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(123,48): warning :                                                 ^
+F:\redis\dict.h(124,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(124,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(124,14): warning :               ^
+F:\redis\dict.h(356,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(356,48): warning :     unsigned int hashValue = dictGenHashFunction(ht[0].table[trehashhidx]->key->sdsbuf(), ht[0].table[trehashhidx]->key->sdslen());
+F:\redis\dict.h(356,48): warning :                                                 ^
+F:\redis\dict.h(357,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(357,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(357,14): warning :               ^
+F:\redis\dict.h(151,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(151,47): warning :    unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(151,47): warning :                                                ^
+F:\redis\dict.h(152,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(152,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(152,13): warning :              ^
+F:\redis\dict.h(187,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(187,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(187,14): warning :               ^
+  redis.cpp
+F:\redis\intset.h(18,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(18,21): warning :    for (int i = 0; i < length; i++)
+F:\redis\intset.h(18,21): warning :                      ^
+F:\redis\intset.h(40,21): warning : suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+F:\redis\intset.h(40,21): warning :      if(begin == mid);
+F:\redis\intset.h(40,21): warning :                      ^
+F:\redis\intset.h(55,12): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(55,12): warning :    for (; i < length; i++)
+F:\redis\intset.h(55,12): warning :             ^
+F:\redis\intset.h(65,12): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(65,12): warning :    for (; i <= length; i++)
+F:\redis\intset.h(65,12): warning :             ^
+F:\redis\intset.h(85,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\intset.h(85,21): warning :    for (int i = 0; i < length-1; i++)
+F:\redis\intset.h(85,21): warning :                      ^
+F:\redis\skiplist.h(477,13): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(70,77): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(70,77): warning :    unsigned int bytes = ZIPLIST_BYTES(zl) + ZIP_NODE_HEADER_SIZE + sizeof(int);
+F:\redis\ziplist.h(70,77): warning :                                                                              ^
+F:\redis\ziplist.h(72,27): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(72,27): warning :    unsigned int offset = p-zl;
+F:\redis\ziplist.h(72,27): warning :                            ^
+F:\redis\ziplist.h(90,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(90,23): warning :      for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(90,23): warning :                        ^
+F:\redis\ziplist.h(95,31): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(95,31): warning :      ZIP_NODE_PREVRAWLEN(node) = ZIP_NODE_BYTES(ZIPLIST_ENTRY_TAIL(zl));
+F:\redis\ziplist.h(95,31): warning :                                ^
+F:\redis\ziplist.h(100,26): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(100,26): warning :      ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(100,26): warning :                           ^
+F:\redis\ziplist.h(109,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(109,22): warning :     for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(109,22): warning :                       ^
+F:\redis\ziplist.h(119,27): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(119,27): warning :     ZIP_NODE_PREVRAWLEN(p) = ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(119,27): warning :                            ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(120,26): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(120,26): message :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes;i++)
+F:\redis\ziplist.h(120,26): message :                           ^
+F:\redis\ziplist.h(120,50): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(120,50): warning :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes;i++)
+F:\redis\ziplist.h(120,50): warning :                                                   ^
+F:\redis\ziplist.h(124,25): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(124,25): warning :     ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(124,25): warning :                          ^
+F:\redis\ziplist.h(125,31): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(125,31): warning :     ZIPLIST_TAIL_OFFSET(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(125,31): warning :                                ^
+F:\redis\ziplist.h(139,38): warning : conversion to ‘unsigned int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(139,38): warning :    unsigned int strLength = strlen(str);
+F:\redis\ziplist.h(139,38): warning :                                       ^
+F:\redis\ziplist.h(140,67): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(140,67): warning :    unsigned int bytes = ZIPLIST_BYTES(zl) + ZIP_NODE_HEADER_SIZE + strLength;
+F:\redis\ziplist.h(140,67): warning :                                                                    ^
+F:\redis\ziplist.h(142,29): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(142,29): warning :    unsigned int offset = p - zl;
+F:\redis\ziplist.h(142,29): warning :                              ^
+F:\redis\ziplist.h(150,24): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(150,24): warning :      ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(150,24): warning :                         ^
+F:\redis\ziplist.h(151,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(151,23): warning :      for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(151,23): warning :                        ^
+F:\redis\ziplist.h(163,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(163,23): warning :      for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(163,23): warning :                        ^
+F:\redis\ziplist.h(168,31): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(168,31): warning :      ZIP_NODE_PREVRAWLEN(node) = ZIP_NODE_BYTES(ZIPLIST_ENTRY_TAIL(zl));
+F:\redis\ziplist.h(168,31): warning :                                ^
+F:\redis\ziplist.h(170,24): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(170,24): warning :      ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(170,24): warning :                         ^
+F:\redis\ziplist.h(171,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(171,23): warning :      for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(171,23): warning :                        ^
+F:\redis\ziplist.h(175,26): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(175,26): warning :      ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(175,26): warning :                           ^
+F:\redis\ziplist.h(184,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(184,22): warning :     for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(184,22): warning :                       ^
+F:\redis\ziplist.h(191,23): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(191,23): warning :     ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(191,23): warning :                        ^
+F:\redis\ziplist.h(192,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(192,22): warning :     for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(192,22): warning :                       ^
+F:\redis\ziplist.h(196,27): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(196,27): warning :     ZIP_NODE_PREVRAWLEN(p) = ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(196,27): warning :                            ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(197,26): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(197,26): message :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes; i++)
+F:\redis\ziplist.h(197,26): message :                           ^
+F:\redis\ziplist.h(197,50): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(197,50): warning :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes; i++)
+F:\redis\ziplist.h(197,50): warning :                                                   ^
+F:\redis\ziplist.h(201,25): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(201,25): warning :     ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(201,25): warning :                          ^
+F:\redis\ziplist.h(202,31): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(202,31): warning :     ZIPLIST_TAIL_OFFSET(newzl) += ZIP_NODE_BYTES(p);
+F:\redis\ziplist.h(202,31): warning :                                ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(357,24): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(357,24): message :    unsigned int psize = ZIP_NODE_BYTES(p);
+F:\redis\ziplist.h(357,24): message :                         ^
+F:\redis\ziplist.h(360,29): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(360,29): warning :    unsigned int offset = p - zl;
+F:\redis\ziplist.h(360,29): warning :                              ^
+F:\redis\ziplist.h(368,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(368,21): warning :    for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(368,21): warning :                      ^
+F:\redis\ziplist.h(372,34): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(372,34): warning :    for (int i = offset + psize; i < ZIPLIST_BYTES(zl); i++)
+F:\redis\ziplist.h(372,34): warning :                                   ^
+F:\redis\zset.h(14,2): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\redis\zset.h(14,2): warning :   }
+F:\redis\zset.h(14,2): warning :   ^
+F:\redis\zset.h(34,2): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\redis\zset.h(34,2): warning :   }
+F:\redis\zset.h(34,2): warning :   ^
+F:\redis\redis.h(211,14): warning : value computed is not used [-Wunused-value]
+F:\redis\redis.h(211,14): warning :    *refcount++;
+F:\redis\redis.h(211,14): warning :               ^
+F:\redis\redis.h(217,14): warning : value computed is not used [-Wunused-value]
+F:\redis\redis.h(217,14): warning :    *refcount--;
+F:\redis\redis.h(217,14): warning :               ^
+F:\redis\redis.h(251,12): warning : deleting ‘void*’ is undefined [-Wdelete-incomplete]
+F:\redis\redis.h(251,12): warning :      delete ptr;
+F:\redis\redis.h(251,12): warning :             ^
+F:\redis\redis.h(260,14): warning : value computed is not used [-Wunused-value]
+F:\redis\redis.h(260,14): warning :    *refcount++;
+F:\redis\redis.h(260,14): warning :               ^
+F:\redis\redis.h(266,14): warning : value computed is not used [-Wunused-value]
+F:\redis\redis.h(266,14): warning :    *refcount--;
+F:\redis\redis.h(266,14): warning :               ^
+F:\redis\redis.h(300,12): warning : deleting ‘void*’ is undefined [-Wdelete-incomplete]
+F:\redis\redis.h(300,12): warning :      delete ptr;
+F:\redis\redis.h(300,12): warning :             ^
+F:\redis\redis.h(333,2): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\redis\redis.h(333,2): warning :   }
+F:\redis\redis.h(333,2): warning :   ^
+F:\redis\redis.h(337,31): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\redis.h(337,31): warning :     return dictionaries->ht[0].used;
+F:\redis\redis.h(337,31): warning :                                ^
+F:\redis\redis.h(339,58): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\redis.h(339,58): warning :     return dictionaries->ht[0].used + dictionaries->ht[1].used;
+F:\redis\redis.h(339,58): warning :                                                           ^
+F:\redis\dict.h(233,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(233,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(233,13): warning :              ^
+F:\redis\dict.h(250,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(250,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(250,14): warning :               ^
+F:\redis\dict.h(417,3): warning : deleting array ‘((dict<double>*)this)->dict<double>::ht’
+F:\redis\dict.h(417,3): warning :    delete[]ht;
+F:\redis\dict.h(417,3): warning :    ^
+F:\redis\dict.h(273,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(273,47): warning :    unsigned int hashValue = dictGenHashFunction(k.sdsbuf(), k.sdslen());
+F:\redis\dict.h(273,47): warning :                                                ^
+F:\redis\dict.h(274,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(274,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(274,13): warning :              ^
+F:\redis\dict.h(282,5): warning : suggest parentheses around assignment used as truth value [-Wparentheses]
+F:\redis\dict.h(282,5): warning :      if (p = ht[0].table[hashValue])
+F:\redis\dict.h(282,5): warning :      ^
+F:\redis\dict.h(317,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(317,48): warning :     unsigned int hashValue = dictGenHashFunction(k.sdsbuf(), k.sdslen());
+F:\redis\dict.h(317,48): warning :                                                 ^
+F:\redis\dict.h(318,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(318,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(318,14): warning :               ^
+F:\redis\dict.h(325,6): warning : suggest parentheses around assignment used as truth value [-Wparentheses]
+F:\redis\dict.h(325,6): warning :       if (p = ht[1].table[hashValue])
+F:\redis\dict.h(325,6): warning :       ^
+F:\redis\dict.h(417,3): warning : deleting array ‘((dict<redisObject>*)this)->dict<redisObject>::ht’
+F:\redis\dict.h(417,3): warning :    delete[]ht;
+F:\redis\dict.h(417,3): warning :    ^
+F:\redis\dict.h(215,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(215,47): warning :    unsigned int hashValue = dictGenHashFunction(k.sdsbuf(), k.sdslen());
+F:\redis\dict.h(215,47): warning :                                                ^
+F:\redis\dict.h(216,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(216,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(216,13): warning :              ^
+F:\redis\dict.h(417,3): warning : deleting array ‘((dict<long long int>*)this)->dict<long long int>::ht’
+F:\redis\dict.h(417,3): warning :    delete[]ht;
+F:\redis\dict.h(417,3): warning :    ^
+F:\redis\dict.h(92,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(92,47): warning :    unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(92,47): warning :                                                ^
+F:\redis\dict.h(93,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(93,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(93,13): warning :              ^
+F:\redis\dict.h(123,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(123,48): warning :     unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(123,48): warning :                                                 ^
+F:\redis\dict.h(124,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(124,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(124,14): warning :               ^
+F:\redis\dict.h(356,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(356,48): warning :     unsigned int hashValue = dictGenHashFunction(ht[0].table[trehashhidx]->key->sdsbuf(), ht[0].table[trehashhidx]->key->sdslen());
+F:\redis\dict.h(356,48): warning :                                                 ^
+F:\redis\dict.h(357,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(357,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(357,14): warning :               ^
+F:\redis\dict.h(55,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\dict.h(55,21): warning :    for (int i = 0; i < size; i++)
+F:\redis\dict.h(55,21): warning :                      ^
+F:\redis\dict.h(55,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\dict.h(55,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\dict.h(92,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(92,47): warning :    unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(92,47): warning :                                                ^
+F:\redis\dict.h(93,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(93,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(93,13): warning :              ^
+F:\redis\dict.h(123,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(123,48): warning :     unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(123,48): warning :                                                 ^
+F:\redis\dict.h(124,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(124,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(124,14): warning :               ^
+F:\redis\dict.h(356,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(356,48): warning :     unsigned int hashValue = dictGenHashFunction(ht[0].table[trehashhidx]->key->sdsbuf(), ht[0].table[trehashhidx]->key->sdslen());
+F:\redis\dict.h(356,48): warning :                                                 ^
+F:\redis\dict.h(357,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(357,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(357,14): warning :               ^
+F:\redis\dict.h(151,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(151,47): warning :    unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(151,47): warning :                                                ^
+F:\redis\dict.h(152,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(152,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(152,13): warning :              ^
+F:\redis\dict.h(187,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(187,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(187,14): warning :               ^
+  sdshdr.cpp
+  skiplist.cpp
+F:\redis\skiplist.h(477,13): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+  ziplist.cpp
+F:\redis\ziplist.h(70,77): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(70,77): warning :    unsigned int bytes = ZIPLIST_BYTES(zl) + ZIP_NODE_HEADER_SIZE + sizeof(int);
+F:\redis\ziplist.h(70,77): warning :                                                                              ^
+F:\redis\ziplist.h(72,27): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(72,27): warning :    unsigned int offset = p-zl;
+F:\redis\ziplist.h(72,27): warning :                            ^
+F:\redis\ziplist.h(90,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(90,23): warning :      for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(90,23): warning :                        ^
+F:\redis\ziplist.h(95,31): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(95,31): warning :      ZIP_NODE_PREVRAWLEN(node) = ZIP_NODE_BYTES(ZIPLIST_ENTRY_TAIL(zl));
+F:\redis\ziplist.h(95,31): warning :                                ^
+F:\redis\ziplist.h(100,26): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(100,26): warning :      ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(100,26): warning :                           ^
+F:\redis\ziplist.h(109,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(109,22): warning :     for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(109,22): warning :                       ^
+F:\redis\ziplist.h(119,27): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(119,27): warning :     ZIP_NODE_PREVRAWLEN(p) = ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(119,27): warning :                            ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(120,26): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(120,26): message :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes;i++)
+F:\redis\ziplist.h(120,26): message :                           ^
+F:\redis\ziplist.h(120,50): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(120,50): warning :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes;i++)
+F:\redis\ziplist.h(120,50): warning :                                                   ^
+F:\redis\ziplist.h(124,25): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(124,25): warning :     ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(124,25): warning :                          ^
+F:\redis\ziplist.h(125,31): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(125,31): warning :     ZIPLIST_TAIL_OFFSET(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(125,31): warning :                                ^
+F:\redis\ziplist.h(139,38): warning : conversion to ‘unsigned int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(139,38): warning :    unsigned int strLength = strlen(str);
+F:\redis\ziplist.h(139,38): warning :                                       ^
+F:\redis\ziplist.h(140,67): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(140,67): warning :    unsigned int bytes = ZIPLIST_BYTES(zl) + ZIP_NODE_HEADER_SIZE + strLength;
+F:\redis\ziplist.h(140,67): warning :                                                                    ^
+F:\redis\ziplist.h(142,29): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(142,29): warning :    unsigned int offset = p - zl;
+F:\redis\ziplist.h(142,29): warning :                              ^
+F:\redis\ziplist.h(150,24): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(150,24): warning :      ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(150,24): warning :                         ^
+F:\redis\ziplist.h(151,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(151,23): warning :      for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(151,23): warning :                        ^
+F:\redis\ziplist.h(163,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(163,23): warning :      for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(163,23): warning :                        ^
+F:\redis\ziplist.h(168,31): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(168,31): warning :      ZIP_NODE_PREVRAWLEN(node) = ZIP_NODE_BYTES(ZIPLIST_ENTRY_TAIL(zl));
+F:\redis\ziplist.h(168,31): warning :                                ^
+F:\redis\ziplist.h(170,24): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(170,24): warning :      ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(170,24): warning :                         ^
+F:\redis\ziplist.h(171,23): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(171,23): warning :      for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(171,23): warning :                        ^
+F:\redis\ziplist.h(175,26): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(175,26): warning :      ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(175,26): warning :                           ^
+F:\redis\ziplist.h(184,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(184,22): warning :     for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(184,22): warning :                       ^
+F:\redis\ziplist.h(191,23): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(191,23): warning :     ZIP_NODE_LEN(node) = strLength;
+F:\redis\ziplist.h(191,23): warning :                        ^
+F:\redis\ziplist.h(192,22): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(192,22): warning :     for (int i = 0; i < strLength; i++)
+F:\redis\ziplist.h(192,22): warning :                       ^
+F:\redis\ziplist.h(196,27): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(196,27): warning :     ZIP_NODE_PREVRAWLEN(p) = ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(196,27): warning :                            ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(197,26): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(197,26): message :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes; i++)
+F:\redis\ziplist.h(197,26): message :                           ^
+F:\redis\ziplist.h(197,50): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(197,50): warning :     for (int i = offset + ZIP_NODE_BYTES(node); i < bytes; i++)
+F:\redis\ziplist.h(197,50): warning :                                                   ^
+F:\redis\ziplist.h(201,25): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(201,25): warning :     ZIPLIST_BYTES(newzl) += ZIP_NODE_BYTES(node);
+F:\redis\ziplist.h(201,25): warning :                          ^
+F:\redis\ziplist.h(202,31): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(202,31): warning :     ZIPLIST_TAIL_OFFSET(newzl) += ZIP_NODE_BYTES(p);
+F:\redis\ziplist.h(202,31): warning :                                ^
+F:\redis\ziplist.h(17,65): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(17,65): warning :  #define ZIP_NODE_BYTES(p)  (ZIP_NODE_HEADER_SIZE+ZIP_NODE_LEN(p))
+F:\redis\ziplist.h(17,65): warning :                                                                  ^
+F:\redis\ziplist.h(357,24): message : in expansion of macro ‘ZIP_NODE_BYTES’
+F:\redis\ziplist.h(357,24): message :    unsigned int psize = ZIP_NODE_BYTES(p);
+F:\redis\ziplist.h(357,24): message :                         ^
+F:\redis\ziplist.h(360,29): warning : conversion to ‘unsigned int’ from ‘long int’ may alter its value [-Wconversion]
+F:\redis\ziplist.h(360,29): warning :    unsigned int offset = p - zl;
+F:\redis\ziplist.h(360,29): warning :                              ^
+F:\redis\ziplist.h(368,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(368,21): warning :    for (int i = 0; i < offset; i++)
+F:\redis\ziplist.h(368,21): warning :                      ^
+F:\redis\ziplist.h(372,34): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\ziplist.h(372,34): warning :    for (int i = offset + psize; i < ZIPLIST_BYTES(zl); i++)
+F:\redis\ziplist.h(372,34): warning :                                   ^
+  zset.cpp
+F:\redis\skiplist.h(477,13): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\zset.h(14,2): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\redis\zset.h(14,2): warning :   }
+F:\redis\zset.h(14,2): warning :   ^
+F:\redis\zset.h(34,2): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\redis\zset.h(34,2): warning :   }
+F:\redis\zset.h(34,2): warning :   ^
+F:\redis\dict.h(233,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(233,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(233,13): warning :              ^
+F:\redis\dict.h(250,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(250,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(250,14): warning :               ^
+F:\redis\dict.h(417,3): warning : deleting array ‘((dict<double>*)this)->dict<double>::ht’
+F:\redis\dict.h(417,3): warning :    delete[]ht;
+F:\redis\dict.h(417,3): warning :    ^
+F:\redis\dict.h(92,47): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(92,47): warning :    unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(92,47): warning :                                                ^
+F:\redis\dict.h(93,13): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(93,13): warning :    hashValue = hashValue & ht[0].sizemask;
+F:\redis\dict.h(93,13): warning :              ^
+F:\redis\dict.h(123,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(123,48): warning :     unsigned int hashValue = dictGenHashFunction(pair.key->sdsbuf(), pair.key->sdslen());
+F:\redis\dict.h(123,48): warning :                                                 ^
+F:\redis\dict.h(124,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(124,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(124,14): warning :               ^
+F:\redis\dict.h(356,48): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\redis\dict.h(356,48): warning :     unsigned int hashValue = dictGenHashFunction(ht[0].table[trehashhidx]->key->sdsbuf(), ht[0].table[trehashhidx]->key->sdslen());
+F:\redis\dict.h(356,48): warning :                                                 ^
+F:\redis\dict.h(357,14): warning : conversion to ‘unsigned int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\redis\dict.h(357,14): warning :     hashValue = hashValue & ht[1].sizemask;
+F:\redis\dict.h(357,14): warning :               ^
+F:\redis\dict.h(55,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+F:\redis\dict.h(55,21): warning :    for (int i = 0; i < size; i++)
+F:\redis\dict.h(55,21): warning :                      ^
+  正在链接对象
+  redis.vcxproj -> F:\redis\bin\x64\Debug\redis.out
